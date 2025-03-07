@@ -14,7 +14,7 @@ using System.Web;
 using JidamVision.Teach;
 using System.IO;
 using OpenCvSharp;
-//ttest126
+//Hi126
 
 namespace JidamVision
 {
