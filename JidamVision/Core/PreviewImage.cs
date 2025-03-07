@@ -14,7 +14,7 @@ namespace JidamVision.Core
     {
         private Mat _orinalImage = null;
         private Mat _previewImage = null;
-        private Mat _tempImage = null;
+        //private Mat _tempImage = null;
 
         public void SetImage(Mat image)
         {
@@ -41,7 +41,7 @@ namespace JidamVision.Core
 
             // 원본 이미지 복사본을 만들어 이진화된 부분에만 색을 덧씌우기
             Mat overlayImage = _orinalImage.Clone();
-            overlayImage.SetTo(new Scalar(0, 0, 255), binaryMask); // 빨간색으로 마스킹
+            overlayImage.SetTo(new Scalar(255, 0, 0), binaryMask); // 파란색으로 마스킹
 
             // 원본과 합성 (투명도 적용)
             Cv2.AddWeighted(_orinalImage, 0.7, overlayImage, 0.3, 0, _previewImage);
