@@ -14,7 +14,7 @@ using System.Web;
 using JidamVision.Teach;
 using System.IO;
 using OpenCvSharp;
-
+//test
 namespace JidamVision
 {
     public partial class CameraForm : DockContent
